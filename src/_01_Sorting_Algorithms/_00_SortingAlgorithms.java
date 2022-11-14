@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  * Run the demo VisualSorter.jar to see the finished product. 
  * Then complete the steps in the classes in the following order:
  * BubbleSorter X
- * BogoSorter
+ * BogoSorter   X
  * ThanosSorter
  * 
  * The classes below are for reference only. You don't have to code these.

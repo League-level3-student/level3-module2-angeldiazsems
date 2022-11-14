@@ -3,6 +3,8 @@ package _01_Sorting_Algorithms;
 import java.lang.reflect.Array;
 import java.util.Random;
 
+import _00_Intro_to_Sorting_Algorithms._01_SortedArrayChecker;
+
 public class ThanosSorter extends Sorter {
 	public ThanosSorter() {
 		type = "Thanos";
@@ -42,15 +44,18 @@ public class ThanosSorter extends Sorter {
 	@Override
 	void sort(int[] arr, SortingVisualizer display) {
 		Random r = new Random();
-		int f = r.nextInt(arr.length - 1);
-
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length - 1; j++) {
-				if (arr[j] > arr[j + 1]) {
-					
-				}
+		
+		while (_01_SortedArrayChecker.intArraySorted(arr) == false) {
+			for(int i = 0; i < arr.length-1/2; i ++) {
+				int f = r.nextInt(arr.length - 1);
+				arr[f].remove;	
 			}
+			
 		}
-
+		
+		
+		
+		
 	}
+
 }
