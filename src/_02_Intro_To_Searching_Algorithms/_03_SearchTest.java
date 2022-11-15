@@ -13,7 +13,20 @@ class _03_SearchTest {
     @Test
     public void testLinearSearch() {
         // 1. Use the assertEquals() method to test your linear search method
-        assertEquals(false, true);
+    	
+    	String[] words = {"hello", "hi", "hallo", "hai"};
+    	String value = "hallo";
+    	int index = _01_LinearSearch.linearSearch(words, value);
+        assertEquals(2, index);
+    }
+    @Test
+    public void testLinearSearchFailure() {
+        // 1. Use the assertEquals() method to test your linear search method
+    	
+    	String[] words = {"hello", "hi", "hallo", "hai"};
+    	String value = "joe";
+    	int index = _01_LinearSearch.linearSearch(words, value);
+        assertEquals(-1, index);
     }
 
     @Test

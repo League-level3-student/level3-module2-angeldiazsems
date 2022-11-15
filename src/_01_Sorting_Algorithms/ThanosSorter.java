@@ -46,16 +46,17 @@ public class ThanosSorter extends Sorter {
 		Random r = new Random();
 		
 		while (_01_SortedArrayChecker.intArraySorted(arr) == false) {
-			for(int i = 0; i < arr.length-1/2; i ++) {
+
+			for(int i = 0; i < arr.length-1/2; i++) {
+				display.updateDisplay();
 				int f = r.nextInt(arr.length - 1);
-				arr[f].remove;	
+				arr[f] = 0;
+			
 			}
 			
 		}
 		
-		
-		
-		
+	
 	}
 
 }

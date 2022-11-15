@@ -25,7 +25,6 @@ public class BogoSorter extends Sorter {
 
 		while (_01_SortedArrayChecker.intArraySorted(array) == false) {
 			display.updateDisplay();
-
 			int f = r.nextInt(array.length - 1);
 			int e = r.nextInt(array.length - 1);
 			int temp = array[f];

@@ -1,4 +1,4 @@
-package _02_Intro_To_Searching_Algorithms;
+ package _02_Intro_To_Searching_Algorithms;
 
 import java.util.Arrays;
 import java.util.List;
