@@ -8,16 +8,52 @@ import java.util.List;
 public class Algorithms {
 
 	public static String multiply(int num1, int num2) {
-		return null;
+
+		int product = num1 * num2;
+		String result = num1 + " x " + num2 + " = " + product;
+
+		return result;
+
+	}
+
+	public static boolean isPrime(int num1) {
+		for(int i = 2; i < num1; i++) {
+			if((num1%i)==0) {
+				return false;
+			}
+		}
+		return true;
+
+	}
+
+	public static boolean isSquare(int num1) {
+	
+		double square = Math.sqrt(num1);
+		if((square*10)%10 == 0) {
+			return true;
+		}
+		return false;
+
+	}
+	public static boolean isCube(int num1) {
+		
+		double cube = Math.cbrt(num1);
+		if((cube*30)%30 == 0) {
+			return true;
+		}
+		
+		return false;
+
 	}
 
 	public static int findBrokenEgg(List<String> eggs) {
 
 		int index = 0;
 		for (int i = 0; i < eggs.size(); i++) {
-			String e = eggs.get(i); // e = what it says at each index
+			String e = eggs.get(i);
 			if (e == "cracked") {
 				index = eggs.indexOf(e);
+				
 				return index;
 			}
 		}
@@ -50,6 +86,8 @@ public class Algorithms {
 
 	public static int findLongestWord(List<String> words) {
 		String e = "Hi";
+		
+		
 		for (int i = 0; i < words.size(); i++) {
 
 		}
@@ -73,10 +111,10 @@ public class Algorithms {
 			for (int j = 0; j < results.size() - 1; j++) {
 				if (results.get(j) > results.get(j + 1)) {
 					double t = results.get(j);
-					results.get(j).equals(results.get(j+1));
-					results.get(j+1).equals(t);
-							
- 				}
+					results.get(j).equals(results.get(j + 1));
+					results.get(j + 1).equals(t);
+
+				}
 			}
 		}
 
