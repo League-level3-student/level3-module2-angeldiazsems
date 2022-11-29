@@ -77,6 +77,10 @@ public class _00_SortingDemo {
         for (int i = 0; i < arr3.length; i++) {
             for (int k = 0; k < arr3.length - 1; k++) {
                 
+            	
+            	//not ascending = negitive
+            	//acending = positve
+            	
                 // "a".compareTo( "b" ) => -1   //one lower/after
                 // "b".compareTo( "a" ) => 1     ///one before
                 // "b".compareTo( "b" ) => 0     //equal

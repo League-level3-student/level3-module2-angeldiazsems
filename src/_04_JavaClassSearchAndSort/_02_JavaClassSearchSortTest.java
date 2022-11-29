@@ -32,7 +32,7 @@ class _02_JavaClassSearchSortTest {
 
     @Test
     void testArraySearch() {
-        char[] unsorted = { 'r', 'a', 'q', 'p', 'g', 'z' };
+        char[] unsorted = { 'r', 'a', 'q', 'p', 'g', 'z'};
 
         assertTrue(_02_JavaClassSearchSort.arraySearch(unsorted, 'p'));
         assertFalse(_02_JavaClassSearchSort.arraySearch(unsorted, 'm'));
@@ -40,7 +40,7 @@ class _02_JavaClassSearchSortTest {
 
     @Test
     void testListSearch() {
-        Character[] unsorted = { 'r', 'a', 'q', 'p', 'g', 'z' , };
+        Character[] unsorted = { 'r', 'a', 'q', 'p', 'g', 'z' };
         List<Character> unsortedList = new ArrayList<>(Arrays.asList(unsorted));
         
         assertTrue(_02_JavaClassSearchSort.listSearch(unsortedList, 'p'));
